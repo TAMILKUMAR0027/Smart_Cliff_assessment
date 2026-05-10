@@ -1,0 +1,30 @@
+package com.tests;
+
+
+
+import org.testng.ITestListener;
+import org.testng.ITestResult;
+
+public class DemoListener implements ITestListener {
+    @Override
+    public void onTestStart(ITestResult result) {
+        System.out.println(result.getName() + " test started");
+    }
+    @Override
+    public void onTestSuccess(ITestResult result) {
+        System.out.println("Test PASSED: " + result.getName());
+    }
+
+    @Override
+    public void onTestFailure(ITestResult result) {
+
+        System.out.println("Test FAILED: " + result.getName());
+    }
+    @Override
+    public void onTestSkipped(ITestResult result) {
+        System.out.println("Test SKIPPED: " + result.getName());
+    }
+
+    
+    
+}

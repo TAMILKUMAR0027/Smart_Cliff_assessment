@@ -1,0 +1,77 @@
+{
+  "id": "4bd73928-56bc-49fb-9761-3394982c5a1a",
+  "version": "2.0",
+  "name": "TutorialNinja",
+  "url": "https://tutorialsninja.com/demo/",
+  "tests": [{
+    "id": "9e403250-3a50-4cc8-9144-779235f78994",
+    "name": "Untitled",
+    "commands": [{
+      "id": "333f73e5-84ff-41a4-9f4b-11676017468d",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3ab1c716-f7df-49f6-b203-f190e1c35850",
+      "comment": "",
+      "command": "storeText",
+      "target": "xpath=//div[@id='content']//div[1]//div[1]//div[2]//p[2]",
+      "targets": [],
+      "value": "homePrice"
+    }, {
+      "id": "57ac2847-be9b-4d90-ad92-d7a701fb699f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=iPhone ",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8dc15cf1-7a82-4dd6-a788-97dd838092a8",
+      "comment": "",
+      "command": "storeText",
+      "target": "xpath=//ul[@class='list-unstyled']//h2 ",
+      "targets": [],
+      "value": "ProductPage Price"
+    }, {
+      "id": "3389ded3-c64b-41bd-95ce-96ab2600749d",
+      "comment": "",
+      "command": "verifyValue",
+      "target": "${homePrice}",
+      "targets": [],
+      "value": "${productPrice}"
+    }, {
+      "id": "414420fd-e525-4231-bfe4-4d60f7d7dc62",
+      "comment": "",
+      "command": "storeText",
+      "target": "id=tab-description     ",
+      "targets": [],
+      "value": " desc"
+    }, {
+      "id": "4308a220-22d6-40fa-b249-011bcdc5a3e2",
+      "comment": "",
+      "command": "echo",
+      "target": " ${desc} ",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8a2be286-e529-4bd4-ba73-b99f7a9ae108",
+      "comment": "",
+      "command": "echo",
+      "target": "${productPrice}",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "78793ad5-ee88-4929-abae-cee2964b7304",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["9e403250-3a50-4cc8-9144-779235f78994"]
+  }],
+  "urls": ["https://tutorialsninja.com/demo/"],
+  "plugins": []
+}
